@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "scripts": "cypress run",
-    "test": "npx cypress run --spec 'cypress\\integration\\Tests\\Login_demoTest.spec.js'",
+    "test": "npx cypress run",
     "runtests": "npm run test --"
   },
   "author": "mohamed",
