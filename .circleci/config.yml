@@ -10,10 +10,13 @@ jobs:
       - attach_workspace:
           at: /tmp/mochawesome-report
       - run: ls /tmp/mochawesome-report
+      - run: node ./lib/combine.js
+      - store_artifacts:
+          path: mochareports
   build:
     working_directory: ~/tmp
     docker:
-      - image: 'cypress/included:4.3.0'
+      - image: 'cypress/base:10'
         environment:
           TERM: xterm
     steps:
