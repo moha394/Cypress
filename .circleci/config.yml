@@ -36,7 +36,7 @@ jobs:
       - attach_workspace:
           at: ~/
       - run: ls -la cypress
-      - run: ls -la cypress/integration
+      - run: ls -la cypress/integration/Tests
       - run:
           name: Running cypress tests
           command: $(npm bin)/cypress run
