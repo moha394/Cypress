@@ -1,5 +1,15 @@
 version: 2
 jobs:
+  combine_reports:
+    working_directory: ~/tmp
+    docker:
+      - image: 'cypress/base:10'
+        environment:
+          TERM: xterm
+    steps:
+      - attach_workspace:
+          at: /tmp/mochawesome-report
+      - run: ls /tmp/mochawesome-report
   build:
     working_directory: ~/tmp
     docker:
@@ -49,6 +59,11 @@ jobs:
           path: cypress/screenshots
       - store_artifacts:
           path: mochawesome-report
+      - persist_to_workspace:
+          root: mochawesome-report
+          paths:
+            - test1.json
+            - test1.html
   test2:
     working_directory: ~/tmp
     docker:
@@ -72,6 +87,11 @@ jobs:
           path: cypress/screenshots
       - store_artifacts:
           path: mochawesome-report
+      - persist_to_workspace:
+          root: mochawesome-report
+          paths:
+            - test2.json
+            - test2.html
 workflows:
   version: 2
   build_and_test:
@@ -83,3 +103,7 @@ workflows:
       - test2:
           requires:
             - build
+      - combine_reports:
+          requires:
+            - test1
+            - test2
