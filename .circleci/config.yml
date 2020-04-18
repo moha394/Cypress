@@ -1,3 +1,4 @@
+version: 2
 
 jobs:
   build:
@@ -26,7 +27,7 @@ jobs:
           paths:
             - .cache
             - tmp
- test1:
+  test1:
     working_directory: ~/tmp
     docker:
       - image: 'cypress/included:4.3.0'
@@ -39,7 +40,8 @@ jobs:
       - run: ls -la cypress/integration
       - run:
           name: Running cypress tests 1
-          command: $(npm bin)/cypress run --spec cypress/integration/Tests/Login_demoTest.spec.js
+          command: $(npm bin)/cypress run --spec cypress/integration/Tests/Login_demoTest_Second.spec.js
+
       - store_artifacts:
           path: cypress/videos
       - store_artifacts:
@@ -57,11 +59,13 @@ jobs:
       - run: ls -la cypress/integration
       - run:
           name: Running cypress tests 2
-          command: $(npm bin)/cypress run --spec cypress/integration/Tests/Login_demoTest_Second.spec.js
+          command: $(npm bin)/cypress run --spec cypress/integration/Tests/Login_demoTest.spec.js
       - store_artifacts:
           path: cypress/videos
       - store_artifacts:
           path: cypress/screenshots
+  
+
 workflows:
   version: 2
   build_and_test:
@@ -73,3 +77,4 @@ workflows:
       - test2:
           requires:
             - build
+     
