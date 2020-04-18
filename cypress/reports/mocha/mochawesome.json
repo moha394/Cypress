@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-04-18T14:59:14.325Z",
-    "end": "2020-04-18T14:59:25.614Z",
-    "duration": 11289,
+    "start": "2020-04-18T23:04:54.114Z",
+    "end": "2020-04-18T23:05:05.340Z",
+    "duration": 11226,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "50fa2e5e-2ae0-42f7-8aeb-2f46ecb871e3",
+      "uuid": "604e0482-21c4-4df6-9a8c-2f3d4d9992ae",
       "title": "",
       "fullFile": "cypress\\integration\\Tests\\Login_demoTest.spec.js",
       "file": "cypress\\integration\\Tests\\Login_demoTest.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "15d08262-5e35-4365-830e-aaf775e2accd",
+          "uuid": "1fae2120-0990-4216-a0a3-9cd0ea9141c6",
           "title": "Login Member",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "This is Login Test",
               "fullTitle": "Login Member This is Login Test",
               "timedOut": null,
-              "duration": 7923,
+              "duration": 7677,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "var HomePageObject = new HomePage_Demo_1.default();\nHomePageObject.OpenLoginPage();\nvar LoginPageDemoObject = new LoginPageDemo_1.default();\nLoginPageDemoObject.Login(\"moha12345@gmail.com\", \"Bm0123456789\");",
               "err": {},
-              "uuid": "2ee54033-88c4-434f-8667-33bc2cc586a9",
-              "parentUUID": "15d08262-5e35-4365-830e-aaf775e2accd",
+              "uuid": "b7061450-dada-4e51-ae52-4d26003a00b0",
+              "parentUUID": "1fae2120-0990-4216-a0a3-9cd0ea9141c6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2ee54033-88c4-434f-8667-33bc2cc586a9"
+            "b7061450-dada-4e51-ae52-4d26003a00b0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7923,
+          "duration": 7677,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
