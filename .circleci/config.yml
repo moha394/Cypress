@@ -57,8 +57,8 @@ jobs:
           name: Running cypress tests 1
           command: >-
             $(npm bin)/cypress run --spec
-            cypress/integrationLogin_demoTest.spec.js --reporter mochawesome
-            --reporter-options "reportFilename=test1"
+            cypress/integration/Tests/Login_demoTest.spec.js --reporter
+            mochawesome --reporter-options "reportFilename=test1"
       - store_artifacts:
           path: cypress/videos
       - store_artifacts:
@@ -85,7 +85,7 @@ jobs:
           name: Running cypress tests 2
           command: >-
             $(npm bin)/cypress run --spec
-            cypress/integrationLogin_demoTest_Second.spec.js --reporter
+            cypress/integration/Tests/Login_demoTest_Second.spec.js --reporter
             mochawesome --reporter-options "reportFilename=test2"
       - store_artifacts:
           path: cypress/videos
