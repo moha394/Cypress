@@ -5,7 +5,7 @@
     "mochawesomeReporterOptions": {
       "reportDir": "cypress/reports",
       "quite": true,
-      "overwrite": true,
+      "overwrite": false,
       "html": true,
       "json": true
     }
