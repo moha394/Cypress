@@ -1,0 +1,223 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-04-20T23:36:45.187Z",
+    "end": "2020-04-20T23:36:45.187Z",
+    "duration": 26729,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f7e64821-d864-4ab5-89bb-327412ffa6bb",
+      "title": "",
+      "fullFile": "cypress\\integration\\Tests\\Login_demoTest_Second.spec.js",
+      "file": "cypress\\integration\\Tests\\Login_demoTest_Second.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d0843b77-ca0c-409a-aaf1-0c0d3fc66a0d",
+          "title": "Login Member",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "This is Login Test",
+              "fullTitle": "Login Member This is Login Test",
+              "timedOut": null,
+              "duration": 11222,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var HomePageObject = new HomePage_Demo_1.default();\nHomePageObject.OpenLoginPage();\nvar LoginPageDemoObject = new LoginPageDemo_1.default();\nLoginPageDemoObject.Login(\"moha12345@gmail.com\", \"Bm0123456789\");",
+              "err": {},
+              "uuid": "8827af9e-d88e-4c9b-9361-179eff017bed",
+              "parentUUID": "d0843b77-ca0c-409a-aaf1-0c0d3fc66a0d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8827af9e-d88e-4c9b-9361-179eff017bed"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11222,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c49a346d-b294-429a-8919-58c515cf63a5",
+      "title": "",
+      "fullFile": "cypress\\integration\\Tests\\Login_demoTest.spec.js",
+      "file": "cypress\\integration\\Tests\\Login_demoTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9d0c45a9-628e-4a1d-81de-d00da08a1f30",
+          "title": "Login Member",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "This is Login Test",
+              "fullTitle": "Login Member This is Login Test",
+              "timedOut": null,
+              "duration": 7830,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var HomePageObject = new HomePage_Demo_1.default();\nHomePageObject.OpenLoginPage();\nvar LoginPageDemoObject = new LoginPageDemo_1.default();\nLoginPageDemoObject.Login(\"moha12345@gmail.com\", \"Bm0123456789\");",
+              "err": {},
+              "uuid": "95b1f824-6f0e-4c08-b617-4b355c811d19",
+              "parentUUID": "9d0c45a9-628e-4a1d-81de-d00da08a1f30",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "95b1f824-6f0e-4c08-b617-4b355c811d19"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7830,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "604e0482-21c4-4df6-9a8c-2f3d4d9992ae",
+      "title": "",
+      "fullFile": "cypress\\integration\\Tests\\Login_demoTest.spec.js",
+      "file": "cypress\\integration\\Tests\\Login_demoTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1fae2120-0990-4216-a0a3-9cd0ea9141c6",
+          "title": "Login Member",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "This is Login Test",
+              "fullTitle": "Login Member This is Login Test",
+              "timedOut": null,
+              "duration": 7677,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var HomePageObject = new HomePage_Demo_1.default();\nHomePageObject.OpenLoginPage();\nvar LoginPageDemoObject = new LoginPageDemo_1.default();\nLoginPageDemoObject.Login(\"moha12345@gmail.com\", \"Bm0123456789\");",
+              "err": {},
+              "uuid": "b7061450-dada-4e51-ae52-4d26003a00b0",
+              "parentUUID": "1fae2120-0990-4216-a0a3-9cd0ea9141c6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b7061450-dada-4e51-ae52-4d26003a00b0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7677,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
