@@ -31,7 +31,7 @@
           },
           {
             "store_artifacts": {
-              "path": "mochareports"
+              "path": "mochawesome-report"
             }
           }
         ]
