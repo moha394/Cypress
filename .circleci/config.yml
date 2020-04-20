@@ -60,8 +60,6 @@ jobs:
             cypress/integration/Tests/Login_demoTest.spec.js --reporter
             mochawesome --reporter-options "reportFilename=test1"
       - store_artifacts:
-          path: cypress/videos
-      - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
           path: mochawesome-report
@@ -87,8 +85,6 @@ jobs:
             $(npm bin)/cypress run --spec
             cypress/integration/Tests/Login_demoTest_Second.spec.js --reporter
             mochawesome --reporter-options "reportFilename=test2"
-      - store_artifacts:
-          path: cypress/videos
       - store_artifacts:
           path: cypress/screenshots
       - store_artifacts:
