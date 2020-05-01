@@ -36,6 +36,7 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/
+      - run: ls -la cypress
       - run: node ./lib/test.js
       - store_artifacts:
           path: cypress/screenshots

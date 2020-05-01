@@ -69,7 +69,9 @@
             "at": "~/"
           }
         },
-     
+        {
+          "run": "ls -la cypress"
+        },
      
       {
         "run": "node ./lib/test.js"
