@@ -69,7 +69,11 @@
             "at": "~/"
           }
         },
-     
+      {
+        "attach_workspace": {
+          "at": "/tmp/mochawesome-report"
+        }
+      },
       {
         "run": "ls /tmp/mochawesome-report"
       },
