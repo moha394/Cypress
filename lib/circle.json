@@ -90,8 +90,7 @@
         "persist_to_workspace":{
           "root": "mochawesome-report",
           "paths": ["output.json"]
-            
-          
+
         }
 
 
