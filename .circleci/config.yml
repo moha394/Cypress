@@ -36,16 +36,12 @@ jobs:
       - checkout
       - attach_workspace:
           at: ~/
-      - run: ls -la cypress
-      - run: node ./lib/test.js
+      - attach_workspace:
+          at: /tmp/mochawesome-report
+      - run: ls /tmp/mochawesome-report
+      - run: node ./lib/combine.js
       - store_artifacts:
-          path: cypress/screenshots
-      - store_artifacts:
-          path: mochawesome-report
-      - persist_to_workspace:
-          root: mochawesome-report
-          paths:
-            - output.json
+          path: mochareports
   test1:
     working_directory: ~/tmp
     docker:
