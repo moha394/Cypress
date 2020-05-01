@@ -78,7 +78,7 @@
         "run": "ls /tmp/mochawesome-report"
       },
       {
-        "run": "node ./lib/combine.js"
+        "run": "node ./lib/test.js"
       },
       {
         "store_artifacts": {
