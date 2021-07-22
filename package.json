@@ -31,6 +31,6 @@
     "file-system": "^2.2.2",
     "json2csv": "^5.0.0",
     "mocha-allure-reporter": "^1.4.0",
-    "xlsx": "^0.15.6"
+    "xlsx": "^0.17.0"
   }
 }
